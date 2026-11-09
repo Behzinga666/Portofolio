@@ -3,9 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rizqy Ramadhan | Portfolio</title>
-  <meta name="description" content="Portofolio resmi Rizqy Ramadhan - Mahasiswa Teknik Informatika Universitas Pasundan, Web Developer & Tech Enthusiast.">
+  <title>Rizqy Ramadhan | Portfolio - Software Tester & Network Specialist</title>
+  <meta name="description" content="Portofolio resmi Rizqy Ramadhan - Mahasiswa Teknik Informatika Universitas Pasundan dengan spesialisasi Software Testing & Network Monitoring.">
   
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
+
   <!-- Google Fonts: Inter -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,10 +32,12 @@
             brand: {
               50: '#eff6ff',
               100: '#dbeafe',
+              200: '#bfdbfe',
               500: '#3b82f6',
               600: '#2563eb', // Calm Blue Accent
               700: '#1d4ed8',
               800: '#1e40af',
+              900: '#1e3a8a',
             }
           }
         }
@@ -41,9 +46,9 @@
   </script>
 
   <style>
-    /* Custom subtle scrollbar */
+    /* Halus scrollbar */
     ::-webkit-scrollbar {
-      width: 8px;
+      width: 7px;
     }
     ::-webkit-scrollbar-track {
       background: #f8fafc;
@@ -60,39 +65,41 @@
 <body class="bg-[#f8fafc] text-slate-800 antialiased font-sans selection:bg-brand-500 selection:text-white">
 
   <!-- ================= NAVBAR ================= -->
-  <header class="sticky top-0 z-50 w-full bg-white/80 backdrop-blur-md border-b border-slate-200/80 transition-all duration-300">
+  <header class="sticky top-0 z-50 w-full bg-white/90 backdrop-blur-md border-b border-slate-200/80 transition-all duration-300">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-16">
+        
         <!-- Brand / Logo -->
         <a href="#home" class="flex items-center gap-2 group">
-          <span class="w-8 h-8 rounded-lg bg-brand-600 text-white flex items-center justify-center font-bold text-base shadow-sm group-hover:bg-brand-700 transition">
-            R
+          <span class="w-8 h-8 rounded-lg bg-brand-600 text-white flex items-center justify-center font-bold text-sm shadow-sm group-hover:bg-brand-700 transition">
+            RR
           </span>
-          <span class="font-bold text-slate-900 tracking-tight text-lg group-hover:text-brand-600 transition">
+          <span class="font-bold text-slate-900 tracking-tight text-base sm:text-lg group-hover:text-brand-600 transition">
             Rizqy Ramadhan<span class="text-brand-600">.</span>
           </span>
         </a>
 
         <!-- Desktop Navigation Links -->
         <nav class="hidden md:flex items-center space-x-1 lg:space-x-2 text-sm font-medium text-slate-600">
-          <a href="#home" class="px-3 py-2 rounded-md hover:text-brand-600 hover:bg-slate-100/60 transition">Home</a>
-          <a href="#about" class="px-3 py-2 rounded-md hover:text-brand-600 hover:bg-slate-100/60 transition">About</a>
-          <a href="#skills" class="px-3 py-2 rounded-md hover:text-brand-600 hover:bg-slate-100/60 transition">Skills</a>
-          <a href="#projects" class="px-3 py-2 rounded-md hover:text-brand-600 hover:bg-slate-100/60 transition">Projects</a>
-          <a href="#contact" class="px-3 py-2 rounded-md hover:text-brand-600 hover:bg-slate-100/60 transition">Contact</a>
+          <a href="#home" class="nav-item px-3 py-1.5 rounded-lg hover:text-brand-600 hover:bg-slate-100 transition">Home</a>
+          <a href="#about" class="nav-item px-3 py-1.5 rounded-lg hover:text-brand-600 hover:bg-slate-100 transition">Tentang</a>
+          <a href="#experience" class="nav-item px-3 py-1.5 rounded-lg hover:text-brand-600 hover:bg-slate-100 transition">Pengalaman</a>
+          <a href="#projects" class="nav-item px-3 py-1.5 rounded-lg hover:text-brand-600 hover:bg-slate-100 transition">Proyek</a>
+          <a href="#skills" class="nav-item px-3 py-1.5 rounded-lg hover:text-brand-600 hover:bg-slate-100 transition">Keahlian</a>
+          <a href="#contact" class="nav-item px-3 py-1.5 rounded-lg hover:text-brand-600 hover:bg-slate-100 transition">Kontak</a>
         </nav>
 
         <!-- CTA Action in Navbar -->
-        <div class="hidden md:flex items-center">
-          <a href="#contact" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg text-xs font-semibold text-white bg-slate-900 hover:bg-slate-800 transition shadow-sm">
+        <div class="hidden md:flex items-center gap-2">
+          <a href="#contact" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg text-xs font-semibold text-white bg-slate-900 hover:bg-brand-600 transition shadow-sm">
             <span>Hubungi Saya</span>
             <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
           </a>
         </div>
 
-        <!-- Mobile Menu Button -->
+        <!-- Mobile Menu Hamburger Button -->
         <div class="flex md:hidden">
-          <button id="mobile-menu-btn" type="button" class="p-2 rounded-lg text-slate-600 hover:text-slate-900 hover:bg-slate-100 focus:outline-none" aria-label="Toggle navigation">
+          <button id="mobile-menu-btn" type="button" class="p-2 rounded-lg text-slate-700 hover:text-slate-900 hover:bg-slate-100 active:scale-95 transition focus:outline-none" aria-label="Toggle navigation">
             <i data-lucide="menu" id="menu-icon" class="w-6 h-6"></i>
           </button>
         </div>
@@ -100,90 +107,124 @@
     </div>
 
     <!-- Mobile Dropdown Menu -->
-    <div id="mobile-menu" class="hidden md:hidden border-b border-slate-200 bg-white px-4 pt-2 pb-4 space-y-1">
-      <a href="#home" class="mobile-link block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-slate-100 hover:text-brand-600">Home</a>
-      <a href="#about" class="mobile-link block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-slate-100 hover:text-brand-600">About</a>
-      <a href="#skills" class="mobile-link block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-slate-100 hover:text-brand-600">Skills</a>
-      <a href="#projects" class="mobile-link block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-slate-100 hover:text-brand-600">Projects</a>
-      <a href="#contact" class="mobile-link block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-slate-100 hover:text-brand-600">Contact</a>
+    <div id="mobile-menu" class="hidden md:hidden border-b border-slate-200 bg-white/95 backdrop-blur-md px-4 pt-2 pb-5 space-y-1 shadow-lg transition-all">
+      <a href="#home" class="mobile-link flex items-center gap-2 px-3 py-2.5 rounded-lg text-sm font-medium text-slate-700 hover:bg-slate-100 hover:text-brand-600">
+        <i data-lucide="home" class="w-4 h-4 text-slate-400"></i> Home
+      </a>
+      <a href="#about" class="mobile-link flex items-center gap-2 px-3 py-2.5 rounded-lg text-sm font-medium text-slate-700 hover:bg-slate-100 hover:text-brand-600">
+        <i data-lucide="user" class="w-4 h-4 text-slate-400"></i> Tentang Saya & Pendidikan
+      </a>
+      <a href="#experience" class="mobile-link flex items-center gap-2 px-3 py-2.5 rounded-lg text-sm font-medium text-slate-700 hover:bg-slate-100 hover:text-brand-600">
+        <i data-lucide="briefcase" class="w-4 h-4 text-slate-400"></i> Pengalaman Kerja & Organisasi
+      </a>
+      <a href="#projects" class="mobile-link flex items-center gap-2 px-3 py-2.5 rounded-lg text-sm font-medium text-slate-700 hover:bg-slate-100 hover:text-brand-600">
+        <i data-lucide="folder-code" class="w-4 h-4 text-slate-400"></i> Proyek & Aplikasi
+      </a>
+      <a href="#skills" class="mobile-link flex items-center gap-2 px-3 py-2.5 rounded-lg text-sm font-medium text-slate-700 hover:bg-slate-100 hover:text-brand-600">
+        <i data-lucide="check-circle" class="w-4 h-4 text-slate-400"></i> Keahlian Teknis
+      </a>
+      <a href="#contact" class="mobile-link flex items-center gap-2 px-3 py-2.5 rounded-lg text-sm font-medium text-slate-700 hover:bg-slate-100 hover:text-brand-600">
+        <i data-lucide="mail" class="w-4 h-4 text-slate-400"></i> Kontak Langsung
+      </a>
+      <div class="pt-2">
+        <a href="#contact" class="mobile-link flex items-center justify-center gap-2 w-full py-2.5 rounded-lg text-sm font-semibold text-white bg-brand-600 hover:bg-brand-700 shadow-sm">
+          <span>Kirim Pesan / Kontak</span>
+          <i data-lucide="arrow-right" class="w-4 h-4"></i>
+        </a>
+      </div>
     </div>
   </header>
 
   <!-- ================= HERO SECTION ================= -->
-  <section id="home" class="relative pt-20 pb-16 md:pt-28 md:pb-24 overflow-hidden">
+  <section id="home" class="relative pt-12 pb-16 sm:pt-20 sm:pb-20 md:pt-28 md:pb-24 overflow-hidden">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex flex-col-reverse md:flex-row items-center justify-between gap-12">
+      <div class="flex flex-col-reverse md:flex-row items-center justify-between gap-10 md:gap-12">
         
         <!-- Text Content -->
-        <div class="flex-1 text-center md:text-left space-y-6">
-          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-50 border border-blue-200 text-xs font-semibold text-brand-700">
+        <div class="flex-1 text-center md:text-left space-y-5 sm:space-y-6">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-50 border border-blue-200 text-xs font-semibold text-brand-700">
             <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-            Terbuka untuk Kolaborasi & Proyek
+            Semester 6 • Terbuka untuk Peluang Kerja & Magang
           </div>
           
           <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight">
             Halo, saya <span class="text-brand-600">Rizqy Ramadhan</span>
           </h1>
 
-          <p class="text-lg sm:text-xl font-medium text-slate-700">
+          <p class="text-lg sm:text-xl font-semibold text-slate-700">
             Mahasiswa Teknik Informatika Universitas Pasundan
           </p>
           
-          <p class="text-base text-slate-600 max-w-xl leading-relaxed">
-            Fokus mendalami pengembangan aplikasi web, QA automation, serta arsitektur jaringan yang handal. Senang mengubah tantangan teknis menjadi solusi digital yang rapi, cepat, dan teruji.
+          <p class="text-sm sm:text-base text-slate-600 max-w-xl mx-auto md:mx-0 leading-relaxed">
+            Berpengalaman di bidang <span class="text-slate-900 font-medium">Network Monitoring</span> dan <span class="text-slate-900 font-medium">Software Testing (QA)</span>. Berpengalaman menguji fungsionalitas aplikasi hingga berhasil rilis di Google Play Store serta memastikan stabilitas infrastruktur jaringan secara optimal.
           </p>
 
           <!-- Action Buttons -->
-          <div class="flex flex-wrap items-center justify-center md:justify-start gap-4 pt-2">
-            <a href="#projects" class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-brand-600 hover:bg-brand-700 text-white font-medium text-sm shadow-sm transition hover:shadow-md transform active:scale-95">
-              <span>Lihat Proyek</span>
-              <i data-lucide="folder-code" class="w-4 h-4"></i>
+          <div class="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-3 sm:gap-4 pt-1">
+            <a href="#projects" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-brand-600 hover:bg-brand-700 text-white font-medium text-sm shadow-sm hover:shadow-md transition transform active:scale-95">
+              <span>Lihat Proyek & Portofolio</span>
+              <i data-lucide="arrow-down" class="w-4 h-4"></i>
             </a>
             
-            <a href="#contact" class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-white hover:bg-slate-50 text-slate-700 font-medium text-sm border border-slate-200 shadow-sm transition transform active:scale-95">
+            <a href="#contact" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-white hover:bg-slate-50 text-slate-700 font-medium text-sm border border-slate-200 shadow-sm transition transform active:scale-95">
               <span>Hubungi Saya</span>
               <i data-lucide="mail" class="w-4 h-4"></i>
             </a>
           </div>
 
-          <!-- Social Quick Links -->
-          <div class="pt-4 flex items-center justify-center md:justify-start gap-4 text-slate-500">
-            <span class="text-xs uppercase tracking-wider font-semibold text-slate-400">Temukan saya:</span>
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="p-2 rounded-lg hover:text-slate-900 hover:bg-slate-200/60 transition" title="GitHub">
-              <i data-lucide="github" class="w-5 h-5"></i>
+          <!-- Social Quick Links & Location -->
+          <div class="pt-4 flex flex-wrap items-center justify-center md:justify-start gap-3 text-slate-500">
+            <span class="text-xs uppercase tracking-wider font-semibold text-slate-400 mr-1">Tautan Langsung:</span>
+            
+            <!-- GitHub Link (Direct) -->
+            <a href="https://github.com/Behzinga666" target="_blank" rel="noopener noreferrer" class="p-2.5 rounded-lg bg-white border border-slate-200 hover:border-slate-400 hover:text-slate-900 hover:shadow-sm transition" title="Kunjungi GitHub Behzinga666">
+              <i data-lucide="github" class="w-4 h-4"></i>
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="p-2 rounded-lg hover:text-brand-600 hover:bg-slate-200/60 transition" title="LinkedIn">
-              <i data-lucide="linkedin" class="w-5 h-5"></i>
+            
+            <!-- LinkedIn Link (Direct) -->
+            <a href="https://www.linkedin.com/in/rizqy-ramadhan-064376415" target="_blank" rel="noopener noreferrer" class="p-2.5 rounded-lg bg-white border border-slate-200 hover:border-blue-500 hover:text-brand-600 hover:shadow-sm transition" title="Kunjungi LinkedIn Rizqy Ramadhan">
+              <i data-lucide="linkedin" class="w-4 h-4"></i>
             </a>
-            <a href="mailto:emailanda@example.com" class="p-2 rounded-lg hover:text-rose-600 hover:bg-slate-200/60 transition" title="Email">
-              <i data-lucide="mail" class="w-5 h-5"></i>
+            
+            <!-- Email Direct Link -->
+            <a href="mailto:rizqyrmdhn73@gmail.com" class="p-2.5 rounded-lg bg-white border border-slate-200 hover:border-rose-400 hover:text-rose-600 hover:shadow-sm transition" title="Kirim Email ke rizqyrmdhn73@gmail.com">
+              <i data-lucide="mail" class="w-4 h-4"></i>
             </a>
+
+            <!-- WhatsApp Direct Link -->
+            <a href="https://wa.me/6281230136071" target="_blank" rel="noopener noreferrer" class="p-2.5 rounded-lg bg-white border border-slate-200 hover:border-emerald-500 hover:text-emerald-600 hover:shadow-sm transition" title="Hubungi via WhatsApp">
+              <i data-lucide="phone" class="w-4 h-4"></i>
+            </a>
+
+            <div class="inline-flex items-center gap-1.5 text-xs text-slate-500 ml-2">
+              <i data-lucide="map-pin" class="w-3.5 h-3.5 text-rose-500"></i>
+              <span>Padalarang, Bandung Barat</span>
+            </div>
           </div>
         </div>
 
         <!-- Profile Photo -->
         <div class="flex-shrink-0 relative">
-          <div class="relative w-48 h-48 sm:w-56 sm:h-56 lg:w-64 lg:h-64 rounded-full p-2 bg-gradient-to-tr from-brand-600/20 via-slate-200 to-transparent shadow-xl">
-            <!-- Profile Image / Placeholder -->
+          <div class="relative w-48 h-48 sm:w-56 sm:h-56 lg:w-64 lg:h-64 rounded-full p-2 bg-gradient-to-tr from-brand-600 via-blue-400 to-indigo-300 shadow-xl">
+            <!-- Profile Image using user's photo -->
             <div class="w-full h-full rounded-full overflow-hidden bg-slate-100 border-4 border-white flex items-center justify-center shadow-inner relative group">
-              <!-- Ganti src di bawah dengan URL/file foto profil Anda -->
               <img 
-                src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80" 
+                src="profile.jpg" 
                 alt="Foto Profil Rizqy Ramadhan" 
                 class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
                 onerror="this.style.display='none'; document.getElementById('avatar-fallback').style.display='flex';"
               >
-              <!-- Fallback jika gambar gagal dimuat -->
+              <!-- Fallback jika file foto belum terpindah -->
               <div id="avatar-fallback" class="hidden w-full h-full bg-slate-900 text-white flex-col items-center justify-center">
                 <span class="text-4xl font-bold">RR</span>
-                <span class="text-xs text-slate-400 mt-1">Rizqy R.</span>
+                <span class="text-xs text-slate-400 mt-1">Rizqy Ramadhan</span>
               </div>
             </div>
             
-            <!-- Floating Decorative Badge -->
-            <div class="absolute -bottom-2 -right-2 bg-white px-3 py-1.5 rounded-full border border-slate-200 shadow-md flex items-center gap-1.5 text-xs font-medium text-slate-700">
-              <i data-lucide="code-2" class="w-3.5 h-3.5 text-brand-600"></i>
-              <span>Informatics</span>
+            <!-- Floating Badge -->
+            <div class="absolute -bottom-2 -right-2 bg-white px-3.5 py-1.5 rounded-full border border-slate-200 shadow-md flex items-center gap-1.5 text-xs font-semibold text-slate-800">
+              <i data-lucide="shield-check" class="w-4 h-4 text-brand-600"></i>
+              <span>QA & Network</span>
             </div>
           </div>
         </div>
@@ -192,51 +233,391 @@
     </div>
   </section>
 
-  <!-- ================= ABOUT SECTION ================= -->
-  <section id="about" class="py-16 bg-white border-y border-slate-200/70">
+  <!-- ================= ABOUT & PENDIDIKAN ================= -->
+  <section id="about" class="py-16 bg-white border-y border-slate-200/80">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="max-w-3xl mx-auto text-center space-y-4 mb-12">
-        <h2 class="text-xs uppercase tracking-widest font-semibold text-brand-600">Tentang Saya</h2>
-        <h3 class="text-2xl sm:text-3xl font-bold text-slate-900">Membangun Solusi Digital dengan Ketepatan & Kualitas</h3>
-        <p class="text-slate-600 leading-relaxed text-sm sm:text-base">
-          Sebagai mahasiswa di Universitas Pasundan, saya menaruh minat mendalam pada integrasi backend modern, pengujian otomatis untuk memastikan perangkat lunak minim bug, serta stabilitas jaringan komputer.
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        
+        <!-- Kolom Kiri: Tentang Saya -->
+        <div class="lg:col-span-7 space-y-4">
+          <div class="inline-flex items-center gap-2 text-xs uppercase tracking-widest font-semibold text-brand-600">
+            <i data-lucide="user" class="w-4 h-4"></i>
+            <span>Tentang Saya</span>
+          </div>
+          <h2 class="text-2xl sm:text-3xl font-bold text-slate-900">
+            Dedikasi Terhadap Kualitas Sistem & Keandalan Jaringan
+          </h2>
+          <p class="text-slate-600 leading-relaxed text-sm sm:text-base">
+            Saya adalah Mahasiswa Teknik Informatika semester 6 di <strong>Universitas Pasundan</strong> dengan pengalaman kerja nyata di bidang <em>Network Monitoring</em> dan keahlian praktis dalam <em>Software Testing</em>.
+          </p>
+          <p class="text-slate-600 leading-relaxed text-sm sm:text-base">
+            Memiliki pengalaman dalam instalasi infrastruktur jaringan serta pengujian fungsionalitas aplikasi Android hingga berhasil terverifikasi dan rilis di Google Play Store. Terbiasa bekerja dalam tim, mengelola waktu secara disiplin, dan memiliki ketelitian tinggi untuk memastikan setiap produk digital bekerja optimal dan bebas kendala.
+          </p>
+
+          <!-- Core Value Badges -->
+          <div class="flex flex-wrap gap-2 pt-2">
+            <span class="px-3 py-1 rounded-lg bg-slate-100 text-slate-700 text-xs font-medium flex items-center gap-1.5">
+              <i data-lucide="check" class="w-3.5 h-3.5 text-brand-600"></i> Ketelitian Tinggi
+            </span>
+            <span class="px-3 py-1 rounded-lg bg-slate-100 text-slate-700 text-xs font-medium flex items-center gap-1.5">
+              <i data-lucide="users" class="w-3.5 h-3.5 text-brand-600"></i> Kerja Sama Tim
+            </span>
+            <span class="px-3 py-1 rounded-lg bg-slate-100 text-slate-700 text-xs font-medium flex items-center gap-1.5">
+              <i data-lucide="clock" class="w-3.5 h-3.5 text-brand-600"></i> Manajemen Waktu
+            </span>
+          </div>
+        </div>
+
+        <!-- Kolom Kanan: Detail Pendidikan -->
+        <div class="lg:col-span-5 bg-slate-50 p-6 rounded-2xl border border-slate-200">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-10 h-10 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center">
+              <i data-lucide="graduation-cap" class="w-5 h-5"></i>
+            </div>
+            <div>
+              <h3 class="font-bold text-slate-900 text-base">Riwayat Pendidikan</h3>
+              <p class="text-xs text-slate-500">Pendidikan formal tingkat tinggi</p>
+            </div>
+          </div>
+
+          <div class="space-y-3 border-t border-slate-200/80 pt-4">
+            <div>
+              <span class="text-xs text-slate-400 font-medium">Perguruan Tinggi</span>
+              <p class="font-bold text-slate-900 text-base">Universitas Pasundan (UNPAS)</p>
+            </div>
+            <div class="grid grid-cols-2 gap-2">
+              <div>
+                <span class="text-xs text-slate-400 font-medium">Program Studi</span>
+                <p class="text-sm font-semibold text-slate-800">S1 Teknik Informatika</p>
+                <span class="text-[11px] text-brand-700 font-medium bg-blue-100/60 px-2 py-0.5 rounded-md inline-block mt-0.5">Semester 6</span>
+              </div>
+              <div>
+                <span class="text-xs text-slate-400 font-medium">Tahun Pendidikan</span>
+                <p class="text-sm font-semibold text-slate-800">2023 – Sekarang</p>
+                <p class="text-xs text-slate-500">Bandung, Indonesia</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PENGALAMAN KERJA & ORGANISASI ================= -->
+  <section id="experience" class="py-16 md:py-24">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-14 space-y-2">
+        <span class="text-xs uppercase tracking-widest font-semibold text-brand-600">Rekam Jejak</span>
+        <h2 class="text-2xl sm:text-3xl font-bold text-slate-900">Pengalaman Kerja & Organisasi</h2>
+        <p class="text-slate-600 text-sm">
+          Pengalaman profesional langsung di industri jaringan dan kontribusi kepanitiaan di lingkungan kampus.
         </p>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <!-- Feature Card 1 -->
-        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200/80 hover:border-brand-500/30 transition shadow-sm">
-          <div class="w-10 h-10 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center mb-4">
-            <i data-lucide="layers" class="w-5 h-5"></i>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        
+        <!-- Kartu 1: Pengalaman Kerja -->
+        <div class="bg-white p-6 sm:p-7 rounded-2xl border border-slate-200 shadow-sm hover:border-brand-500/40 transition">
+          <div class="flex items-start justify-between gap-4 mb-4">
+            <div>
+              <span class="inline-block px-2.5 py-1 rounded-md bg-emerald-50 text-emerald-700 text-xs font-semibold mb-2">
+                Pengalaman Kerja
+              </span>
+              <h3 class="text-lg font-bold text-slate-900">PT Wahana Akses Data Ekatama</h3>
+              <p class="text-xs sm:text-sm font-medium text-brand-600 mt-0.5">Network Monitoring & Troubleshooting</p>
+            </div>
+            <span class="text-xs font-medium text-slate-500 bg-slate-100 px-2.5 py-1 rounded-md whitespace-nowrap">
+              3 Bulan
+            </span>
           </div>
-          <h4 class="font-semibold text-slate-900 mb-2">Web Development</h4>
-          <p class="text-sm text-slate-600 leading-relaxed">
-            Membangun arsitektur backend yang kokoh dan API yang efisien menggunakan ekosistem Laravel, Python, dan Supabase.
-          </p>
+
+          <ul class="space-y-3 text-xs sm:text-sm text-slate-600 leading-relaxed">
+            <li class="flex items-start gap-2.5">
+              <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500 flex-shrink-0 mt-0.5"></i>
+              <span>Melakukan monitoring secara berkala terhadap stabilitas dan performa jaringan internet untuk memastikan konektivitas berjalan optimal tanpa gangguan.</span>
+            </li>
+            <li class="flex items-start gap-2.5">
+              <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500 flex-shrink-0 mt-0.5"></i>
+              <span>Melakukan troubleshooting awal dan penanganan cepat terhadap kendala teknis pada perangkat keras maupun perangkat lunak jaringan di lapangan.</span>
+            </li>
+          </ul>
         </div>
 
-        <!-- Feature Card 2 -->
-        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200/80 hover:border-brand-500/30 transition shadow-sm">
-          <div class="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center mb-4">
-            <i data-lucide="check-check" class="w-5 h-5"></i>
+        <!-- Kartu 2: Pengalaman Organisasi & Kepanitiaan -->
+        <div class="bg-white p-6 sm:p-7 rounded-2xl border border-slate-200 shadow-sm hover:border-brand-500/40 transition">
+          <div class="flex items-start justify-between gap-4 mb-4">
+            <div>
+              <span class="inline-block px-2.5 py-1 rounded-md bg-blue-50 text-brand-700 text-xs font-semibold mb-2">
+                Pengalaman Organisasi & Kepanitiaan
+              </span>
+              <h3 class="text-lg font-bold text-slate-900">Kepanitiaan PKKMB Unpas</h3>
+              <p class="text-xs sm:text-sm font-medium text-brand-600 mt-0.5">Staf Divisi Keamanan</p>
+            </div>
+            <span class="text-xs font-medium text-slate-500 bg-slate-100 px-2.5 py-1 rounded-md whitespace-nowrap">
+              Kampus Unpas
+            </span>
           </div>
-          <h4 class="font-semibold text-slate-900 mb-2">QA & Test Automation</h4>
-          <p class="text-sm text-slate-600 leading-relaxed">
-            Menulis skenario end-to-end testing otomatis dengan Playwright untuk menjamin aplikasi bekerja tanpa cela sebelum rilis.
-          </p>
+
+          <ul class="space-y-3 text-xs sm:text-sm text-slate-600 leading-relaxed">
+            <li class="flex items-start gap-2.5">
+              <i data-lucide="shield" class="w-4 h-4 text-brand-600 flex-shrink-0 mt-0.5"></i>
+              <span>Bertanggung jawab penuh dalam menjaga keamanan, ketertiban, dan kedisiplinan seluruh peserta selama rangkaian acara penerimaan mahasiswa baru berlangsung.</span>
+            </li>
+            <li class="flex items-start gap-2.5">
+              <i data-lucide="users" class="w-4 h-4 text-brand-600 flex-shrink-0 mt-0.5"></i>
+              <span>Berkoordinasi aktif dengan divisi lain guna mengawal kelancaran alur mobilisasi ribuan mahasiswa baru dan para tamu undangan.</span>
+            </li>
+          </ul>
         </div>
 
-        <!-- Feature Card 3 -->
-        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200/80 hover:border-brand-500/30 transition shadow-sm">
-          <div class="w-10 h-10 rounded-xl bg-indigo-50 text-indigo-600 flex items-center justify-center mb-4">
-            <i data-lucide="network" class="w-5 h-5"></i>
-          </div>
-          <h4 class="font-semibold text-slate-900 mb-2">Network Troubleshooting</h4>
-          <p class="text-sm text-slate-600 leading-relaxed">
-            Mendiagnosa problem konektivitas, konfigurasi routing dasar, monitoring lalu lintas jaringan, dan optimasi performa.
-          </p>
-        </div>
       </div>
+    </div>
+  </section>
+
+  <!-- ================= PROYEK SECTION ================= -->
+  <section id="projects" class="py-16 md:py-24 bg-white border-y border-slate-200/80">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-14 space-y-2">
+        <span class="text-xs uppercase tracking-widest font-semibold text-brand-600">Portofolio</span>
+        <h2 class="text-2xl sm:text-3xl font-bold text-slate-900">Proyek & Pengujian Sistem</h2>
+        <p class="text-slate-600 text-sm">
+          Hasil nyata pengujian perangkat lunak (*Software Quality Assurance*) dan pengembangan sistem.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        
+        <!-- Project 1: Amil Track -->
+        <div class="bg-slate-50 rounded-2xl border border-slate-200 overflow-hidden flex flex-col hover:shadow-lg transition-all duration-300 group">
+          <!-- Card Header / Visual Banner -->
+          <div class="h-44 bg-gradient-to-br from-slate-900 via-indigo-950 to-slate-900 p-6 flex flex-col justify-between text-white relative">
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-2">
+                <span class="w-8 h-8 rounded-lg bg-emerald-500/20 border border-emerald-400/40 text-emerald-400 flex items-center justify-center font-bold">
+                  <i data-lucide="smartphone" class="w-4 h-4"></i>
+                </span>
+                <span class="text-xs font-semibold uppercase tracking-wider text-slate-300">Android Application</span>
+              </div>
+              <span class="inline-flex items-center gap-1 text-[11px] font-semibold bg-emerald-500/20 text-emerald-300 border border-emerald-400/30 px-2.5 py-0.5 rounded-full">
+                <i data-lucide="check" class="w-3 h-3"></i> Google Play Store Released
+              </span>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-white group-hover:text-emerald-400 transition">
+                Aplikasi Android "Amil Track"
+              </h3>
+              <p class="text-xs text-slate-300 mt-1">Peran: Software Tester (QA)</p>
+            </div>
+          </div>
+
+          <!-- Card Body -->
+          <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+            <ul class="space-y-2.5 text-xs sm:text-sm text-slate-600 leading-relaxed">
+              <li class="flex items-start gap-2">
+                <i data-lucide="check" class="w-4 h-4 text-brand-600 flex-shrink-0 mt-0.5"></i>
+                <span>Bertanggung jawab melakukan pengujian aplikasi (<em>application testing</em>) secara menyeluruh pada aspek fungsionalitas dan <em>usability</em> untuk mengidentifikasi bug atau ketidaksesuaian sistem.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <i data-lucide="check" class="w-4 h-4 text-brand-600 flex-shrink-0 mt-0.5"></i>
+                <span>Menyusun laporan hasil pengujian dan berkolaborasi erat dengan tim pengembang untuk memastikan seluruh bug diperbaiki sebelum dirilis.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <i data-lucide="check" class="w-4 h-4 text-brand-600 flex-shrink-0 mt-0.5"></i>
+                <span>Memastikan kualitas aplikasi memenuhi standar kelayakan hingga berhasil lolos verifikasi dan dipublikasikan resmi di Google Play Store.</span>
+              </li>
+            </ul>
+
+            <div class="pt-4 border-t border-slate-200 flex flex-wrap items-center justify-between gap-3">
+              <div class="flex gap-1.5 flex-wrap">
+                <span class="text-[10px] font-semibold bg-white border border-slate-200 text-slate-700 px-2 py-0.5 rounded">Application Testing</span>
+                <span class="text-[10px] font-semibold bg-white border border-slate-200 text-slate-700 px-2 py-0.5 rounded">Usability</span>
+                <span class="text-[10px] font-semibold bg-white border border-slate-200 text-slate-700 px-2 py-0.5 rounded">Play Store Verification</span>
+              </div>
+              <a href="https://github.com/Behzinga666" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-semibold text-brand-600 hover:text-brand-800 transition">
+                <span>Repositori GitHub</span>
+                <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: Sistem Web Kasir UMKM -->
+        <div class="bg-slate-50 rounded-2xl border border-slate-200 overflow-hidden flex flex-col hover:shadow-lg transition-all duration-300 group">
+          <!-- Card Header / Visual Banner -->
+          <div class="h-44 bg-gradient-to-br from-slate-900 via-slate-800 to-brand-950 p-6 flex flex-col justify-between text-white relative">
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-2">
+                <span class="w-8 h-8 rounded-lg bg-blue-500/20 border border-blue-400/40 text-blue-400 flex items-center justify-center font-bold">
+                  <i data-lucide="globe" class="w-4 h-4"></i>
+                </span>
+                <span class="text-xs font-semibold uppercase tracking-wider text-slate-300">Web Application</span>
+              </div>
+              <span class="inline-flex items-center gap-1 text-[11px] font-semibold bg-blue-500/20 text-blue-300 border border-blue-400/30 px-2.5 py-0.5 rounded-full">
+                <i data-lucide="layers" class="w-3 h-3"></i> UMKM System
+              </span>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-white group-hover:text-blue-400 transition">
+                Sistem Rancang Bangun Web Kasir UMKM
+              </h3>
+              <p class="text-xs text-slate-300 mt-1">Peran: Software Tester (QA)</p>
+            </div>
+          </div>
+
+          <!-- Card Body -->
+          <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+            <ul class="space-y-2.5 text-xs sm:text-sm text-slate-600 leading-relaxed">
+              <li class="flex items-start gap-2">
+                <i data-lucide="check" class="w-4 h-4 text-brand-600 flex-shrink-0 mt-0.5"></i>
+                <span>Melakukan uji coba fungsi (<em>functional testing</em>) dan berbagai skenario transaksi pada sistem web kasir untuk memastikan akurasi perhitungan data keuangan.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <i data-lucide="check" class="w-4 h-4 text-brand-600 flex-shrink-0 mt-0.5"></i>
+                <span>Menguji ketahanan sistem inventaris dan fitur laporan otomatis guna memastikan web dapat berjalan lancar saat digunakan untuk operasional harian UMKM.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <i data-lucide="check" class="w-4 h-4 text-brand-600 flex-shrink-0 mt-0.5"></i>
+                <span>Memberikan rekomendasi perbaikan kualitas antarmuka dan alur sistem berdasarkan hasil pengujian demi meningkatkan kenyamanan pengguna (<em>User Experience</em>).</span>
+              </li>
+            </ul>
+
+            <div class="pt-4 border-t border-slate-200 flex flex-wrap items-center justify-between gap-3">
+              <div class="flex gap-1.5 flex-wrap">
+                <span class="text-[10px] font-semibold bg-white border border-slate-200 text-slate-700 px-2 py-0.5 rounded">Functional Testing</span>
+                <span class="text-[10px] font-semibold bg-white border border-slate-200 text-slate-700 px-2 py-0.5 rounded">Inventory QA</span>
+                <span class="text-[10px] font-semibold bg-white border border-slate-200 text-slate-700 px-2 py-0.5 rounded">UI/UX Feedback</span>
+              </div>
+              <a href="https://github.com/Behzinga666" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-semibold text-brand-600 hover:text-brand-800 transition">
+                <span>Repositori GitHub</span>
+                <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: Game 2D Pixel "Dangerous" -->
+        <div class="bg-slate-50 rounded-2xl border border-slate-200 overflow-hidden flex flex-col hover:shadow-lg transition-all duration-300 group">
+          <!-- Card Header / Visual Banner -->
+          <div class="h-44 bg-gradient-to-br from-slate-900 via-rose-950 to-slate-900 p-6 flex flex-col justify-between text-white relative">
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-2">
+                <span class="w-8 h-8 rounded-lg bg-rose-500/20 border border-rose-400/40 text-rose-400 flex items-center justify-center font-bold">
+                  <i data-lucide="gamepad-2" class="w-4 h-4"></i>
+                </span>
+                <span class="text-xs font-semibold uppercase tracking-wider text-slate-300">2D Pixel Game</span>
+              </div>
+              <span class="inline-flex items-center gap-1 text-[11px] font-semibold bg-amber-500/20 text-amber-300 border border-amber-400/30 px-2.5 py-0.5 rounded-full">
+                <i data-lucide="crown" class="w-3 h-3 text-amber-300"></i> Project Lead
+              </span>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-white group-hover:text-rose-400 transition">
+                Game 2D Pixel "Dangerous"
+              </h3>
+              <p class="text-xs text-rose-200 mt-1 font-medium">Peran: Ketua Tim & Game Designer</p>
+            </div>
+          </div>
+
+          <!-- Card Body -->
+          <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+            <ul class="space-y-2.5 text-xs sm:text-sm text-slate-600 leading-relaxed">
+              <li class="flex items-start gap-2">
+                <i data-lucide="check" class="w-4 h-4 text-brand-600 flex-shrink-0 mt-0.5"></i>
+                <span>Bertindak sebagai <strong>Ketua Tim</strong> yang memimpin koordinasi anggota, pembagian tugas pengembangan, pengawasan alur kerja, dan manajemen timeline proyek.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <i data-lucide="check" class="w-4 h-4 text-brand-600 flex-shrink-0 mt-0.5"></i>
+                <span>Merancang konsep inti permainan (<em>gameplay mechanics</em>), sistem rintangan (*level design*), dan dinamika interaksi karakter berkonsep pixel art yang menantang.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <i data-lucide="check" class="w-4 h-4 text-brand-600 flex-shrink-0 mt-0.5"></i>
+                <span>Melakukan sesi pengujian internal (*playtesting*) iteratif bersama tim guna memastikan keseimbangan tingkat kesulitan (*game balancing*) dan kontrol yang responsif.</span>
+              </li>
+            </ul>
+
+            <div class="pt-4 border-t border-slate-200 flex flex-wrap items-center justify-between gap-3">
+              <div class="flex gap-1.5 flex-wrap">
+                <span class="text-[10px] font-semibold bg-white border border-slate-200 text-slate-700 px-2 py-0.5 rounded">Team Leadership</span>
+                <span class="text-[10px] font-semibold bg-white border border-slate-200 text-slate-700 px-2 py-0.5 rounded">Game Design</span>
+                <span class="text-[10px] font-semibold bg-white border border-slate-200 text-slate-700 px-2 py-0.5 rounded">2D Pixel Art</span>
+              </div>
+              <a href="https://github.com/Behzinga666" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-semibold text-brand-600 hover:text-brand-800 transition">
+                <span>Repositori GitHub</span>
+                <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4: Game 2D Pixel "Angki The Adventure" -->
+        <div class="bg-slate-50 rounded-2xl border border-slate-200 overflow-hidden flex flex-col hover:shadow-lg transition-all duration-300 group">
+          <!-- Card Header / Visual Banner -->
+          <div class="h-44 bg-gradient-to-br from-slate-900 via-emerald-950 to-slate-900 p-6 flex flex-col justify-between text-white relative">
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-2">
+                <span class="w-8 h-8 rounded-lg bg-emerald-500/20 border border-emerald-400/40 text-emerald-400 flex items-center justify-center font-bold">
+                  <i data-lucide="compass" class="w-4 h-4"></i>
+                </span>
+                <span class="text-xs font-semibold uppercase tracking-wider text-slate-300">2D Adventure Game</span>
+              </div>
+              <span class="inline-flex items-center gap-1 text-[11px] font-semibold bg-emerald-500/20 text-emerald-300 border border-emerald-400/30 px-2.5 py-0.5 rounded-full">
+                <i data-lucide="palette" class="w-3 h-3 text-emerald-300"></i> Game Designer
+              </span>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-white group-hover:text-emerald-400 transition">
+                Game 2D Pixel "Angki The Adventure"
+              </h3>
+              <p class="text-xs text-emerald-200 mt-1 font-medium">Peran: Game Designer</p>
+            </div>
+          </div>
+
+          <!-- Card Body -->
+          <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+            <ul class="space-y-2.5 text-xs sm:text-sm text-slate-600 leading-relaxed">
+              <li class="flex items-start gap-2">
+                <i data-lucide="check" class="w-4 h-4 text-brand-600 flex-shrink-0 mt-0.5"></i>
+                <span>Bertanggung jawab sebagai <strong>Game Designer</strong> dalam merancang arsitektur level petualangan, teka-teki rintangan, dan alur perjalanan karakter utama.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <i data-lucide="check" class="w-4 h-4 text-brand-600 flex-shrink-0 mt-0.5"></i>
+                <span>Merancang estetika visual retro pixel art, penempatan *item collectible*, serta mekanisme gerak platformer untuk menghadirkan pengalaman bermain yang imersif.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <i data-lucide="check" class="w-4 h-4 text-brand-600 flex-shrink-0 mt-0.5"></i>
+                <span>Mengoptimalkan *game feel* dan alur interaksi pemain berdasarkan hasil pengujian langsung agar nyaman dimainkan oleh pengguna dari berbagai kalangan.</span>
+              </li>
+            </ul>
+
+            <div class="pt-4 border-t border-slate-200 flex flex-wrap items-center justify-between gap-3">
+              <div class="flex gap-1.5 flex-wrap">
+                <span class="text-[10px] font-semibold bg-white border border-slate-200 text-slate-700 px-2 py-0.5 rounded">Level Design</span>
+                <span class="text-[10px] font-semibold bg-white border border-slate-200 text-slate-700 px-2 py-0.5 rounded">Game Mechanics</span>
+                <span class="text-[10px] font-semibold bg-white border border-slate-200 text-slate-700 px-2 py-0.5 rounded">Playtesting QA</span>
+              </div>
+              <a href="https://github.com/Behzinga666" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-semibold text-brand-600 hover:text-brand-800 transition">
+                <span>Repositori GitHub</span>
+                <i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- GitHub Banner Link -->
+      <div class="mt-12 text-center">
+        <a href="https://github.com/Behzinga666" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-xs sm:text-sm font-semibold text-slate-700 hover:text-brand-600 bg-slate-100 hover:bg-slate-200/80 px-5 py-2.5 rounded-xl transition">
+          <i data-lucide="github" class="w-4 h-4"></i>
+          <span>Kunjungi Profil Lengkap di GitHub (Behzinga666)</span>
+          <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+        </a>
+      </div>
+
     </div>
   </section>
 
@@ -246,109 +627,120 @@
       
       <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
         <div>
-          <span class="text-xs uppercase tracking-widest font-semibold text-brand-600">Keahlian Teknis</span>
-          <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 mt-1">Tools & Teknologi Utama</h2>
+          <span class="text-xs uppercase tracking-widest font-semibold text-brand-600">Kompetensi</span>
+          <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 mt-1">Keahlian Teknis & Personal</h2>
         </div>
-        <p class="text-slate-600 text-sm max-w-md">
-          Kombinasi teknologi yang rutin saya gunakan dalam pengerjaan tugas kuliah, eksplorasi riset, maupun proyek mandiri.
+        <p class="text-slate-600 text-xs sm:text-sm max-w-md">
+          Daftar keahlian yang terasah melalui pengalaman kerja langsung, pengujian aplikasi, dan kurikulum Teknik Informatika.
         </p>
       </div>
 
       <!-- Skills Grid -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         
-        <!-- Skill 1: PHP / Laravel -->
-        <div class="group p-5 bg-white rounded-xl border border-slate-200 hover:border-brand-500/50 hover:shadow-md transition-all duration-300">
-          <div class="flex items-center gap-4">
-            <div class="w-12 h-12 rounded-lg bg-red-50 text-red-600 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition duration-300">
-              <i data-lucide="server" class="w-6 h-6"></i>
+        <!-- Skill: Network Troubleshooting -->
+        <div class="p-5 bg-white rounded-xl border border-slate-200 hover:border-brand-500/50 hover:shadow-md transition">
+          <div class="flex items-center gap-3.5">
+            <div class="w-10 h-10 rounded-lg bg-blue-50 text-brand-600 flex items-center justify-center flex-shrink-0">
+              <i data-lucide="activity" class="w-5 h-5"></i>
             </div>
             <div>
-              <div class="flex items-center gap-2">
-                <h3 class="font-bold text-slate-900 text-base">PHP / Laravel</h3>
-                <span class="text-[10px] px-2 py-0.5 rounded-full bg-red-100 text-red-700 font-medium">Backend</span>
-              </div>
-              <p class="text-xs text-slate-500 mt-1">MVC architecture, Eloquent ORM, REST API, Authentication</p>
+              <h3 class="font-bold text-slate-900 text-sm">Network Troubleshooting</h3>
+              <p class="text-[11px] text-slate-500 mt-0.5">Diagnosa kendala hardware & software jaringan lapangan</p>
             </div>
           </div>
         </div>
 
-        <!-- Skill 2: Python -->
-        <div class="group p-5 bg-white rounded-xl border border-slate-200 hover:border-brand-500/50 hover:shadow-md transition-all duration-300">
-          <div class="flex items-center gap-4">
-            <div class="w-12 h-12 rounded-lg bg-yellow-50 text-yellow-600 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition duration-300">
-              <i data-lucide="terminal" class="w-6 h-6"></i>
+        <!-- Skill: Network Monitoring -->
+        <div class="p-5 bg-white rounded-xl border border-slate-200 hover:border-brand-500/50 hover:shadow-md transition">
+          <div class="flex items-center gap-3.5">
+            <div class="w-10 h-10 rounded-lg bg-cyan-50 text-cyan-600 flex items-center justify-center flex-shrink-0">
+              <i data-lucide="wifi" class="w-5 h-5"></i>
             </div>
             <div>
-              <div class="flex items-center gap-2">
-                <h3 class="font-bold text-slate-900 text-base">Python</h3>
-                <span class="text-[10px] px-2 py-0.5 rounded-full bg-yellow-100 text-yellow-800 font-medium">Scripting</span>
-              </div>
-              <p class="text-xs text-slate-500 mt-1">Data processing, scripting task, automation & backend logic</p>
+              <h3 class="font-bold text-slate-900 text-sm">Network Monitoring</h3>
+              <p class="text-[11px] text-slate-500 mt-0.5">Pemantauan berkala stabilitas & performa trafik koneksi</p>
             </div>
           </div>
         </div>
 
-        <!-- Skill 3: Supabase -->
-        <div class="group p-5 bg-white rounded-xl border border-slate-200 hover:border-brand-500/50 hover:shadow-md transition-all duration-300">
-          <div class="flex items-center gap-4">
-            <div class="w-12 h-12 rounded-lg bg-emerald-50 text-emerald-600 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition duration-300">
-              <i data-lucide="database" class="w-6 h-6"></i>
+        <!-- Skill: Application Testing -->
+        <div class="p-5 bg-white rounded-xl border border-slate-200 hover:border-brand-500/50 hover:shadow-md transition">
+          <div class="flex items-center gap-3.5">
+            <div class="w-10 h-10 rounded-lg bg-emerald-50 text-emerald-600 flex items-center justify-center flex-shrink-0">
+              <i data-lucide="check-check" class="w-5 h-5"></i>
             </div>
             <div>
-              <div class="flex items-center gap-2">
-                <h3 class="font-bold text-slate-900 text-base">Supabase</h3>
-                <span class="text-[10px] px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-700 font-medium">BaaS / DB</span>
-              </div>
-              <p class="text-xs text-slate-500 mt-1">PostgreSQL, Row Level Security, Realtime & Auth service</p>
+              <h3 class="font-bold text-slate-900 text-sm">Application Testing</h3>
+              <p class="text-[11px] text-slate-500 mt-0.5">Pengujian fungsionalitas, usability & pelaporan bug</p>
             </div>
           </div>
         </div>
 
-        <!-- Skill 4: Playwright (QA Automation) -->
-        <div class="group p-5 bg-white rounded-xl border border-slate-200 hover:border-brand-500/50 hover:shadow-md transition-all duration-300">
-          <div class="flex items-center gap-4">
-            <div class="w-12 h-12 rounded-lg bg-purple-50 text-purple-600 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition duration-300">
-              <i data-lucide="play-circle" class="w-6 h-6"></i>
+        <!-- Skill: Playwright (QA Automation) -->
+        <div class="p-5 bg-white rounded-xl border border-slate-200 hover:border-brand-500/50 hover:shadow-md transition">
+          <div class="flex items-center gap-3.5">
+            <div class="w-10 h-10 rounded-lg bg-purple-50 text-purple-600 flex items-center justify-center flex-shrink-0">
+              <i data-lucide="play-circle" class="w-5 h-5"></i>
             </div>
             <div>
-              <div class="flex items-center gap-2">
-                <h3 class="font-bold text-slate-900 text-base">Playwright</h3>
-                <span class="text-[10px] px-2 py-0.5 rounded-full bg-purple-100 text-purple-700 font-medium">QA Automation</span>
+              <div class="flex items-center gap-1.5">
+                <h3 class="font-bold text-slate-900 text-sm">Playwright</h3>
+                <span class="text-[9px] px-1.5 py-0.2 rounded bg-purple-100 text-purple-700 font-semibold">QA</span>
               </div>
-              <p class="text-xs text-slate-500 mt-1">E2E browser testing, cross-browser test runner, bug reporting</p>
+              <p class="text-[11px] text-slate-500 mt-0.5">Automated E2E testing pada browser web</p>
             </div>
           </div>
         </div>
 
-        <!-- Skill 5: Network Troubleshooting -->
-        <div class="group p-5 bg-white rounded-xl border border-slate-200 hover:border-brand-500/50 hover:shadow-md transition-all duration-300">
-          <div class="flex items-center gap-4">
-            <div class="w-12 h-12 rounded-lg bg-cyan-50 text-cyan-600 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition duration-300">
-              <i data-lucide="cpu" class="w-6 h-6"></i>
+        <!-- Skill: Game Design & Level Design -->
+        <div class="p-5 bg-white rounded-xl border border-slate-200 hover:border-brand-500/50 hover:shadow-md transition">
+          <div class="flex items-center gap-3.5">
+            <div class="w-10 h-10 rounded-lg bg-rose-50 text-rose-600 flex items-center justify-center flex-shrink-0">
+              <i data-lucide="gamepad-2" class="w-5 h-5"></i>
             </div>
             <div>
-              <div class="flex items-center gap-2">
-                <h3 class="font-bold text-slate-900 text-base">Network Troubleshooting</h3>
-                <span class="text-[10px] px-2 py-0.5 rounded-full bg-cyan-100 text-cyan-800 font-medium">Networking</span>
-              </div>
-              <p class="text-xs text-slate-500 mt-1">TCP/IP, Wireshark, DNS/DHCP, packet diagnostics & latency</p>
+              <h3 class="font-bold text-slate-900 text-sm">Game & Level Design</h3>
+              <p class="text-[11px] text-slate-500 mt-0.5">Mekanik 2D, alur rintangan & game balancing</p>
             </div>
           </div>
         </div>
 
-        <!-- Skill 6: Modern Web & Git (Extra complement) -->
-        <div class="group p-5 bg-white rounded-xl border border-slate-200 hover:border-brand-500/50 hover:shadow-md transition-all duration-300">
-          <div class="flex items-center gap-4">
-            <div class="w-12 h-12 rounded-lg bg-blue-50 text-brand-600 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition duration-300">
-              <i data-lucide="git-branch" class="w-6 h-6"></i>
+        <!-- Skill: Team Leadership -->
+        <div class="p-5 bg-white rounded-xl border border-slate-200 hover:border-brand-500/50 hover:shadow-md transition">
+          <div class="flex items-center gap-3.5">
+            <div class="w-10 h-10 rounded-lg bg-amber-50 text-amber-600 flex items-center justify-center flex-shrink-0">
+              <i data-lucide="crown" class="w-5 h-5"></i>
             </div>
             <div>
-              <div class="flex items-center gap-2">
-                <h3 class="font-bold text-slate-900 text-base">Git & Version Control</h3>
-                <span class="text-[10px] px-2 py-0.5 rounded-full bg-blue-100 text-brand-700 font-medium">Workflow</span>
-              </div>
-              <p class="text-xs text-slate-500 mt-1">Git flow, GitHub collaboration, branching, CI/CD pipeline basics</p>
+              <h3 class="font-bold text-slate-900 text-sm">Team Leadership</h3>
+              <p class="text-[11px] text-slate-500 mt-0.5">Manajemen tim proyek, delegasi tugas & timeline</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skill: PHP / Laravel & Python -->
+        <div class="p-5 bg-white rounded-xl border border-slate-200 hover:border-brand-500/50 hover:shadow-md transition">
+          <div class="flex items-center gap-3.5">
+            <div class="w-10 h-10 rounded-lg bg-indigo-50 text-indigo-600 flex items-center justify-center flex-shrink-0">
+              <i data-lucide="server" class="w-5 h-5"></i>
+            </div>
+            <div>
+              <h3 class="font-bold text-slate-900 text-sm">PHP, Laravel & Python</h3>
+              <p class="text-[11px] text-slate-500 mt-0.5">Backend logic, scripting otomasi & arsitektur MVC</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skill: Supabase & Database -->
+        <div class="p-5 bg-white rounded-xl border border-slate-200 hover:border-brand-500/50 hover:shadow-md transition">
+          <div class="flex items-center gap-3.5">
+            <div class="w-10 h-10 rounded-lg bg-emerald-50 text-emerald-700 flex items-center justify-center flex-shrink-0">
+              <i data-lucide="database" class="w-5 h-5"></i>
+            </div>
+            <div>
+              <h3 class="font-bold text-slate-900 text-sm">Supabase & Database</h3>
+              <p class="text-[11px] text-slate-500 mt-0.5">Database relasional SQL, transaksi & API integration</p>
             </div>
           </div>
         </div>
@@ -357,202 +749,93 @@
     </div>
   </section>
 
-  <!-- ================= PROJECTS SECTION ================= -->
-  <section id="projects" class="py-16 md:py-24 bg-white border-t border-slate-200/70">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-      
-      <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
-        <span class="text-xs uppercase tracking-widest font-semibold text-brand-600">Portofolio</span>
-        <h2 class="text-2xl sm:text-3xl font-bold text-slate-900">Proyek Unggulan</h2>
-        <p class="text-slate-600 text-sm">
-          Berikut beberapa proyek yang telah saya kembangkan, mencakup sistem web aplikasi, pengujian otomasi, dan utilitas jaringan.
-        </p>
-      </div>
-
-      <!-- Projects Grid -->
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        
-        <!-- Project Card 1 -->
-        <div class="bg-slate-50 rounded-2xl border border-slate-200 overflow-hidden flex flex-col hover:shadow-lg transition-all duration-300 group">
-          <!-- Card Image Placeholder -->
-          <div class="h-48 bg-slate-200 relative overflow-hidden flex items-center justify-center">
-            <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent z-10"></div>
-            <!-- Placeholder Visual Graphic -->
-            <div class="w-full h-full bg-slate-800 flex items-center justify-center text-slate-400 group-hover:scale-105 transition duration-500">
-              <i data-lucide="layout-dashboard" class="w-12 h-12 opacity-40"></i>
-            </div>
-            <div class="absolute bottom-3 left-3 z-20 flex gap-1.5 flex-wrap">
-              <span class="text-[11px] font-semibold bg-white/90 text-slate-900 px-2.5 py-0.5 rounded-md backdrop-blur-sm shadow-sm">Laravel</span>
-              <span class="text-[11px] font-semibold bg-brand-600 text-white px-2.5 py-0.5 rounded-md shadow-sm">Supabase</span>
-            </div>
-          </div>
-          <!-- Card Content -->
-          <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
-            <div>
-              <h3 class="font-bold text-lg text-slate-900 group-hover:text-brand-600 transition">
-                Sistem Informasi Akademik & Portal Tugas
-              </h3>
-              <p class="text-xs text-slate-600 mt-2 line-clamp-3 leading-relaxed">
-                Platform manajemen nilai dan submission tugas mahasiswa dengan integrasi database Supabase (PostgreSQL) serta autentikasi role-based berbasis Laravel.
-              </p>
-            </div>
-            <!-- Card Footer / Link -->
-            <div class="pt-4 border-t border-slate-200 flex items-center justify-between">
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-semibold text-slate-700 hover:text-brand-600 transition">
-                <i data-lucide="github" class="w-4 h-4"></i>
-                <span>Lihat Repositori</span>
-              </a>
-              <span class="text-xs text-slate-400 flex items-center gap-1">
-                <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
-              </span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project Card 2 -->
-        <div class="bg-slate-50 rounded-2xl border border-slate-200 overflow-hidden flex flex-col hover:shadow-lg transition-all duration-300 group">
-          <!-- Card Image Placeholder -->
-          <div class="h-48 bg-slate-200 relative overflow-hidden flex items-center justify-center">
-            <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent z-10"></div>
-            <div class="w-full h-full bg-slate-800 flex items-center justify-center text-slate-400 group-hover:scale-105 transition duration-500">
-              <i data-lucide="check-square" class="w-12 h-12 opacity-40"></i>
-            </div>
-            <div class="absolute bottom-3 left-3 z-20 flex gap-1.5 flex-wrap">
-              <span class="text-[11px] font-semibold bg-white/90 text-slate-900 px-2.5 py-0.5 rounded-md backdrop-blur-sm shadow-sm">Playwright</span>
-              <span class="text-[11px] font-semibold bg-purple-600 text-white px-2.5 py-0.5 rounded-md shadow-sm">QA Automation</span>
-            </div>
-          </div>
-          <!-- Card Content -->
-          <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
-            <div>
-              <h3 class="font-bold text-lg text-slate-900 group-hover:text-brand-600 transition">
-                Automated E2E Testing Suite for E-Commerce
-              </h3>
-              <p class="text-xs text-slate-600 mt-2 line-clamp-3 leading-relaxed">
-                Rangkaian skrip uji regresi end-to-end otomatis menggunakan Playwright. Menguji alur checkout keranjang, login user, dan pelaporan otomatis via HTML reporter.
-              </p>
-            </div>
-            <!-- Card Footer / Link -->
-            <div class="pt-4 border-t border-slate-200 flex items-center justify-between">
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-semibold text-slate-700 hover:text-brand-600 transition">
-                <i data-lucide="github" class="w-4 h-4"></i>
-                <span>Lihat Repositori</span>
-              </a>
-              <span class="text-xs text-slate-400 flex items-center gap-1">
-                <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
-              </span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project Card 3 -->
-        <div class="bg-slate-50 rounded-2xl border border-slate-200 overflow-hidden flex flex-col hover:shadow-lg transition-all duration-300 group">
-          <!-- Card Image Placeholder -->
-          <div class="h-48 bg-slate-200 relative overflow-hidden flex items-center justify-center">
-            <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent z-10"></div>
-            <div class="w-full h-full bg-slate-800 flex items-center justify-center text-slate-400 group-hover:scale-105 transition duration-500">
-              <i data-lucide="activity" class="w-12 h-12 opacity-40"></i>
-            </div>
-            <div class="absolute bottom-3 left-3 z-20 flex gap-1.5 flex-wrap">
-              <span class="text-[11px] font-semibold bg-white/90 text-slate-900 px-2.5 py-0.5 rounded-md backdrop-blur-sm shadow-sm">Python</span>
-              <span class="text-[11px] font-semibold bg-cyan-600 text-white px-2.5 py-0.5 rounded-md shadow-sm">Networking</span>
-            </div>
-          </div>
-          <!-- Card Content -->
-          <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
-            <div>
-              <h3 class="font-bold text-lg text-slate-900 group-hover:text-brand-600 transition">
-                Network Latency & Host Ping Monitor
-              </h3>
-              <p class="text-xs text-slate-600 mt-2 line-clamp-3 leading-relaxed">
-                Alat bantu pemantau ketersediaan subnet dan host jaringan secara real-time yang ditulis dengan Python, dilengkapi alert otomatis saat terjadi packet loss.
-              </p>
-            </div>
-            <!-- Card Footer / Link -->
-            <div class="pt-4 border-t border-slate-200 flex items-center justify-between">
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-semibold text-slate-700 hover:text-brand-600 transition">
-                <i data-lucide="github" class="w-4 h-4"></i>
-                <span>Lihat Repositori</span>
-              </a>
-              <span class="text-xs text-slate-400 flex items-center gap-1">
-                <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
-              </span>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- More Projects Banner -->
-      <div class="mt-12 text-center">
-        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-sm font-semibold text-slate-700 hover:text-brand-600 bg-slate-100 hover:bg-slate-200/80 px-5 py-2.5 rounded-xl transition">
-          <i data-lucide="github" class="w-4 h-4"></i>
-          <span>Lihat proyek lainnya di GitHub</span>
-          <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
-        </a>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ================= CONTACT & FOOTER SECTION ================= -->
+  <!-- ================= CONTACT & FOOTER ================= -->
   <footer id="contact" class="bg-slate-900 text-slate-300 pt-16 pb-12">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 pb-12 border-b border-slate-800">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10 pb-12 border-b border-slate-800">
         
-        <!-- Left Column: Bio & Note -->
+        <!-- Info Biodata -->
         <div class="space-y-4">
           <div class="flex items-center gap-2">
-            <span class="w-7 h-7 rounded-md bg-brand-600 text-white flex items-center justify-center font-bold text-sm">
-              R
+            <span class="w-8 h-8 rounded-lg bg-brand-600 text-white flex items-center justify-center font-bold text-sm">
+              RR
             </span>
             <span class="font-bold text-white tracking-tight text-lg">
               Rizqy Ramadhan<span class="text-brand-500">.</span>
             </span>
           </div>
-          <p class="text-sm text-slate-400 max-w-sm leading-relaxed">
-            Mahasiswa Teknik Informatika di Universitas Pasundan. Terbuka untuk diskusi proyek, kesempatan magang, atau kolaborasi open-source.
+          <p class="text-xs sm:text-sm text-slate-400 max-w-md leading-relaxed">
+            Mahasiswa Teknik Informatika Universitas Pasundan (Semester 6). Siap berkontribusi dalam tim untuk posisi Software QA / Testing, Network Monitoring, Game Development, maupun Web Engineering.
           </p>
-          <div class="text-xs text-slate-500">
-            Bandung, Jawa Barat, Indonesia
+          <div class="flex items-center gap-2 text-xs text-slate-400">
+            <i data-lucide="map-pin" class="w-4 h-4 text-brand-400"></i>
+            <span>Padalarang, Bandung Barat, Jawa Barat, Indonesia</span>
           </div>
         </div>
 
-        <!-- Right Column: Direct Contact & Social Links -->
+        <!-- Action Links (Direct) -->
         <div class="space-y-4">
-          <h3 class="text-base font-semibold text-white">Hubungi atau Terhubung</h3>
+          <h3 class="text-sm font-semibold text-white uppercase tracking-wider">Kontak Langsung</h3>
           <p class="text-xs text-slate-400">
-            Silakan kirimkan email atau hubungi melalui akun profesional berikut:
+            Klik tautan di bawah ini untuk langsung menuju profil atau mengirimkan pesan:
           </p>
 
-          <div class="flex flex-col sm:flex-row gap-3 pt-2">
-            <!-- Email Action -->
-            <a href="mailto:rizqy.ramadhan@example.com" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-medium border border-slate-700/60 transition group">
-              <i data-lucide="mail" class="w-4 h-4 text-brand-400"></i>
-              <span class="group-hover:text-white">rizqy.ramadhan@example.com</span>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1">
+            
+            <!-- Email Direct Link -->
+            <a href="mailto:rizqyrmdhn73@gmail.com" class="flex items-center gap-2.5 p-3 rounded-xl bg-slate-800 hover:bg-slate-700/90 text-slate-200 border border-slate-700/60 hover:border-brand-500 transition group">
+              <div class="w-8 h-8 rounded-lg bg-rose-500/10 text-rose-400 flex items-center justify-center flex-shrink-0 group-hover:scale-105 transition">
+                <i data-lucide="mail" class="w-4 h-4"></i>
+              </div>
+              <div class="truncate">
+                <span class="text-[10px] text-slate-400 block">Kirim Email</span>
+                <span class="text-xs font-semibold text-white group-hover:text-brand-400 transition truncate block">rizqyrmdhn73@gmail.com</span>
+              </div>
             </a>
 
-            <!-- LinkedIn Link -->
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-medium border border-slate-700/60 transition group">
-              <i data-lucide="linkedin" class="w-4 h-4 text-blue-400"></i>
-              <span class="group-hover:text-white">LinkedIn Profile</span>
+            <!-- WhatsApp Direct Link -->
+            <a href="https://wa.me/6281230136071" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2.5 p-3 rounded-xl bg-slate-800 hover:bg-slate-700/90 text-slate-200 border border-slate-700/60 hover:border-emerald-500 transition group">
+              <div class="w-8 h-8 rounded-lg bg-emerald-500/10 text-emerald-400 flex items-center justify-center flex-shrink-0 group-hover:scale-105 transition">
+                <i data-lucide="phone" class="w-4 h-4"></i>
+              </div>
+              <div class="truncate">
+                <span class="text-[10px] text-slate-400 block">WhatsApp / Telepon</span>
+                <span class="text-xs font-semibold text-white group-hover:text-emerald-400 transition truncate block">081230136071</span>
+              </div>
             </a>
 
-            <!-- GitHub Link -->
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-medium border border-slate-700/60 transition group">
-              <i data-lucide="github" class="w-4 h-4 text-slate-300"></i>
-              <span class="group-hover:text-white">GitHub</span>
+            <!-- LinkedIn Direct Link -->
+            <a href="https://www.linkedin.com/in/rizqy-ramadhan-064376415" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2.5 p-3 rounded-xl bg-slate-800 hover:bg-slate-700/90 text-slate-200 border border-slate-700/60 hover:border-blue-400 transition group">
+              <div class="w-8 h-8 rounded-lg bg-blue-500/10 text-blue-400 flex items-center justify-center flex-shrink-0 group-hover:scale-105 transition">
+                <i data-lucide="linkedin" class="w-4 h-4"></i>
+              </div>
+              <div class="truncate">
+                <span class="text-[10px] text-slate-400 block">Koneksi Profesional</span>
+                <span class="text-xs font-semibold text-white group-hover:text-blue-400 transition truncate block">LinkedIn Profile</span>
+              </div>
             </a>
+
+            <!-- GitHub Direct Link -->
+            <a href="https://github.com/Behzinga666" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2.5 p-3 rounded-xl bg-slate-800 hover:bg-slate-700/90 text-slate-200 border border-slate-700/60 hover:border-slate-500 transition group">
+              <div class="w-8 h-8 rounded-lg bg-slate-700/40 text-slate-300 flex items-center justify-center flex-shrink-0 group-hover:scale-105 transition">
+                <i data-lucide="github" class="w-4 h-4"></i>
+              </div>
+              <div class="truncate">
+                <span class="text-[10px] text-slate-400 block">Repositori Kode</span>
+                <span class="text-xs font-semibold text-white group-hover:text-slate-300 transition truncate block">github.com/Behzinga666</span>
+              </div>
+            </a>
+
           </div>
         </div>
 
       </div>
 
-      <!-- Bottom Copyright & Back to Top -->
+      <!-- Footer Bottom -->
       <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
         <div>
-          &copy; <span id="current-year"></span> Rizqy Ramadhan. All rights reserved.
+          &copy; <span id="current-year"></span> Rizqy Ramadhan. Mahasiswa Teknik Informatika Universitas Pasundan.
         </div>
         <div class="flex items-center gap-4">
           <a href="#home" class="hover:text-slate-300 flex items-center gap-1 transition">
@@ -567,13 +850,13 @@
 
   <!-- ================= JAVASCRIPT LOGIC ================= -->
   <script>
-    // Initialize Lucide icons
+    // Inisialisasi ikon Lucide
     lucide.createIcons();
 
-    // Set dynamic current year in footer
+    // Set tahun otomatis di footer
     document.getElementById('current-year').textContent = new Date().getFullYear();
 
-    // Mobile Navigation Toggle
+    // Toggle menu navigasi mobile
     const mobileBtn = document.getElementById('mobile-menu-btn');
     const mobileMenu = document.getElementById('mobile-menu');
     const mobileLinks = document.querySelectorAll('.mobile-link');
@@ -582,31 +865,37 @@
       mobileMenu.classList.toggle('hidden');
     });
 
-    // Close mobile menu on link click
+    // Otomatis menutup menu mobile saat salah satu link diklik
     mobileLinks.forEach(link => {
       link.addEventListener('click', () => {
         mobileMenu.classList.add('hidden');
       });
     });
 
-    // Active state observer for smooth experience
+    // Menutup menu mobile saat mengklik di luar area menu
+    document.addEventListener('click', (e) => {
+      if (!mobileBtn.contains(e.target) && !mobileMenu.contains(e.target)) {
+        mobileMenu.classList.add('hidden');
+      }
+    });
+
+    // Active state highlighting pada navbar saat scroll
     const sections = document.querySelectorAll('section');
-    const navLinks = document.querySelectorAll('nav a');
+    const navItems = document.querySelectorAll('.nav-item');
 
     window.addEventListener('scroll', () => {
-      let current = '';
+      let currentSectionId = '';
       sections.forEach(section => {
         const sectionTop = section.offsetTop;
-        const sectionHeight = section.clientHeight;
-        if (pageYOffset >= (sectionTop - 120)) {
-          current = section.getAttribute('id');
+        if (pageYOffset >= (sectionTop - 140)) {
+          currentSectionId = section.getAttribute('id');
         }
       });
 
-      navLinks.forEach(link => {
-        link.classList.remove('text-brand-600', 'bg-slate-100/60');
-        if (link.getAttribute('href').includes(current)) {
-          link.classList.add('text-brand-600', 'bg-slate-100/60');
+      navItems.forEach(item => {
+        item.classList.remove('text-brand-600', 'bg-slate-100');
+        if (item.getAttribute('href') === `#${currentSectionId}`) {
+          item.classList.add('text-brand-600', 'bg-slate-100');
         }
       });
     });

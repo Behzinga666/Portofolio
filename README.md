@@ -1,49 +1,49 @@
 # Portofolio Pribadi - Rizqy Ramadhan
 
-Website portofolio statis yang minimalis, clean, dan profesional. Didesain secara responsif untuk layar mobile, tablet, dan desktop tanpa memerlukan langkah *build* yang rumit (dapat langsung dibuka di browser atau di-deploy gratis ke GitHub Pages dan Vercel).
+Website portofolio statis yang minimalis, modern, dan sepenuhnya responsif (Mobile, Tablet, Desktop). Didesain khusus berdasarkan profil akademik dan pengalaman nyata di bidang **Software Testing (QA)**, **Network Monitoring**, serta **Game Development (2D Pixel)**.
 
 ---
 
-## 🚀 Fitur & Keunggulan
-- **Minimalis & Modern**: Font Inter, palet warna terang dengan aksen biru kalem (*calm blue*).
-- **Single Page Architecture**:
-  - **Sticky Navbar**: Dilengkapi hamburger menu otomatis untuk mobile.
-  - **Hero Section**: Foto profil bulat, sapaan hangat, status ketersediaan, serta tombol CTA.
-  - **About Section**: Penjelasan singkat fokus keilmuan dan latar belakang di Universitas Pasundan.
-  - **Skills Badges**: PHP/Laravel, Python, Supabase, Playwright (QA Automation), dan Network Troubleshooting.
-  - **Project Cards**: Kartu portofolio dengan badge teknologi dan link ke repositori GitHub.
-  - **Contact & Footer**: Tautan ke GitHub, LinkedIn, dan email dengan tahun otomatis.
-- **Zero-Dependency Build**: Menggunakan CDN Tailwind CSS dan Lucide Icons, sehingga bisa langsung di-deploy tanpa Node.js.
+## 📁 Struktur File Proyek
+```text
+rizqy-portfolio/
+├── index.html        # Halaman utama portofolio
+├── profile.jpg       # Foto profil resmi (jas putih + dasi)
+└── README.md         # Dokumentasi & panduan deploy
+```
 
 ---
 
-## 🛠️ Cara Menjalankan Secara Lokal
-
-1. Buka file `index.html` langsung di browser favorit Anda (Chrome, Edge, Firefox), **atau**
-2. Gunakan ekstensi **Live Server** di VS Code:
-   - Klik kanan pada `index.html`
-   - Pilih **Open with Live Server**
-
----
-
-## 🌐 Cara Deploy Gratis
-
-### 1. GitHub Pages (Paling Mudah)
-1. Buat repositori baru di GitHub (misal: `portofolio`).
-2. Unggah file `index.html` dan `README.md` ke branch `main`.
-3. Buka tab **Settings** di repositori GitHub Anda.
-4. Pilih menu **Pages** di bilah kiri.
-5. Pada bagian **Branch**, pilih `main` dan folder `/(root)`, lalu klik **Save**.
-6. Dalam 1-2 menit, situs Anda akan aktif di `https://<username>.github.io/<repo-name>/`.
-
-### 2. Vercel
-1. Kunjungi [vercel.com](https://vercel.com) dan login dengan akun GitHub Anda.
-2. Klik **Add New Project**, lalu pilih repositori portofolio Anda.
-3. Karena ini adalah situs HTML murni, biarkan semua pengaturan default dan klik **Deploy**.
-4. Website Anda langsung tayang dengan domain gratis `.vercel.app` dan sertifikat SSL/HTTPS aktif.
+## 🎮 Proyek Unggulan yang Ditampilkan:
+1. **Aplikasi Android "Amil Track"** (*Software Tester / QA*):
+   - Pengujian fungsionalitas & usability, penyusunan laporan bug, hingga terverifikasi dan resmi rilis di **Google Play Store**.
+2. **Sistem Rancang Bangun Web Kasir UMKM** (*Software Tester / QA*):
+   - Functional testing transaksi, ketahanan inventaris & laporan harian, serta evaluasi UI/UX.
+3. **Game 2D Pixel "Dangerous"** (*Ketua Tim & Game Designer*):
+   - Memimpin tim (Team Leadership), perancangan gameplay mechanics, level design berkonsep pixel art, serta playtesting game balancing.
+4. **Game 2D Pixel "Angki The Adventure"** (*Game Designer*):
+   - Perancangan level petualangan, teka-teki rintangan, aset pixel art, dan optimasi *game feel*.
 
 ---
 
-## ✏️ Cara Kustomisasi
-- **Ganti Foto Profil**: Cari tag `<img>` di bagian `Hero Section` pada baris sekitar 124 dan ubah atribut `src` dengan path file foto Anda (misal `img/profil.jpg`).
-- **Ganti Link Sosial**: Sesuaikan tautan `https://github.com`, `https://linkedin.com`, dan alamat email `mailto:rizqy.ramadhan@example.com` di bagian Hero dan Contact/Footer.
+## 💼 Pengalaman Kerja & Organisasi:
+- **PT Wahana Akses Data Ekatama (3 Bulan)**: Network Monitoring & Troubleshooting teknis hardware/software di lapangan.
+- **Kepanitiaan PKKMB Unpas**: Staf Divisi Keamanan.
+- **Pendidikan**: Universitas Pasundan — S1 Teknik Informatika (Semester 6).
+
+---
+
+## 🔗 Tautan Langsung (*Direct Link*):
+- GitHub: [github.com/Behzinga666](https://github.com/Behzinga666)
+- LinkedIn: [linkedin.com/in/rizqy-ramadhan-064376415](https://www.linkedin.com/in/rizqy-ramadhan-064376415)
+- Email: `rizqyrmdhn73@gmail.com`
+- WhatsApp: `081230136071`
+- Lokasi: Padalarang, Bandung Barat / Bandung.
+
+---
+
+## 🚀 Cara Update ke GitHub & Vercel
+1. Buka repositori Anda di [github.com/Behzinga666](https://github.com/Behzinga666).
+2. Klik **Add file** > **Upload files**.
+3. Unggah file `index.html` dan `profile.jpg`.
+4. Klik **Commit changes**. Vercel akan otomatis melakukan deploy dalam hitungan detik.
